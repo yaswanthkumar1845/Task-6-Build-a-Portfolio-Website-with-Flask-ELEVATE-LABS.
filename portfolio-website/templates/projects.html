@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Projects - My Portfolio{% endblock %}
+
+{% block content %}
+<section class="projects">
+    <div class="container">
+        <h1>My Projects</h1>
+        <p class="section-subtitle">Here are some of the projects I've worked on</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://www.google.com/imgres?q=landscapes&imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fidyllic-summer-landscape-clear-mountain-lake-alps-45054687.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Flandscape.html&docid=FJh5I-_Ld_X0hM&tbnid=tO2rrWt-ax8eIM&vet=12ahUKEwjXgvzL7oWQAxV3bvUHHbh6KvQQM3oECB8QAA..i&w=800&h=541&hcb=2&ved=2ahUKEwjXgvzL7oWQAxV3bvUHHbh6KvQQM3oECB8QAA" alt="E-Commerce App">
+                </div>
+                <div class="project-content">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce application built with Flask and React. Features user authentication, payment processing, and admin dashboard.</p>
+                    <div class="project-tech">
+                        <span>Flask</span>
+                        <span>React</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/764abc/ffffff?text=Task+Manager" alt="Task Manager">
+                </div>
+                <div class="project-content">
+                    <h3>Task Management App</h3>
+                    <p>A collaborative task management tool with real-time updates, team collaboration features, and progress tracking.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>WebSocket</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x250/f56565/ffffff?text=Weather+App" alt="Weather App">
+                </div>
+                <div class="project-content">
+                    <h3>Weather Dashboard</h3>
+                    <p>A responsive weather application that displays current conditions and forecasts using weather API integration.</p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>API</span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

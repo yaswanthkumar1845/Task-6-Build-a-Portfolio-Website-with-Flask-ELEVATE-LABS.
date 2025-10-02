@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Hi, I'm <span class="highlight">Yaswanth kumar</span></h1>
+            <h2>Full Stack Developer</h2>
+            <p>I create beautiful and functional web applications using modern technologies. Passionate about clean code and user experience.</p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('projects') }}" class="btn btn-primary">View My Work</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Yaswanth kumar" onerror="this.src='https://via.placeholder.com/400x400/667ee9/ffffff?text=Profile+Image'">
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate developer with 3+ years of experience in web development. I specialize in Python, Flask, JavaScript, and modern web technologies.</p>
+                <p>When I'm not coding, you can find me contributing to open-source projects, learning new technologies, or hiking in the mountains.</p>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
